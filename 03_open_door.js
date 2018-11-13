@@ -23,23 +23,28 @@ var assert = require('assert');
 describe('openDoor', function () {
     let hash = [];
     it('should return true if "Simon" and hasCoffee with single object', function () {
+        hash = [];
         hash.push(makeItem('Simon', true))
         assert.equal(true, openDoor(hash))
     })
     it('should return true if "Simon" and hasCoffee with multiple objects', function () {
+        hash = [];
         hash.push(makeItem('Simon', true))
         hash.push(makeItem('Scott', true))
         assert.equal(true, openDoor(hash))
     })
     it('should return false if !"Simon" and hasCoffee', function () {
+        hash = [];
         hash.push(makeItem('Scott', true))
         assert.equal(false, openDoor(hash))
     })
     it('should return false if "Simon" and !hasCoffee', function () {
+        hash = [];
         hash.push(makeItem('Simon', false))
         assert.equal(false, openDoor(hash))
     })
     it('should return false if empty array passed', function () {
+        hash = [];
         assert.equal(false, openDoor(hash))
     })
 })
