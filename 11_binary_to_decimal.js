@@ -5,6 +5,10 @@ Examples:
     binaryToDecimal(1000) => 8
     binaryToDecimal(1011) => 11
     binaryToDecimal(1100) => 12
+
+Beast Mode:
+Attempt to write the method again without using parseInt.
+
 */
 
 function binaryToDecimal(binaryNumber) {
