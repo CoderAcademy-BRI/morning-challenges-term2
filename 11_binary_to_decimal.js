@@ -6,8 +6,9 @@ Examples:
     binaryToDecimal(1011) => 11
     binaryToDecimal(1100) => 12
 
-Beast Mode:
-Attempt to write the method again without using parseInt.
+Your solution should not use parseInt
+
+Test: mocha 11_binary_to_decimal
 
 */
 
