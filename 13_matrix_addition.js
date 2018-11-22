@@ -8,7 +8,7 @@ Check your solution by running mocha 13_matrix_addition
 Examples:
 function matrixAddition ([1,2,3,4], [2,3,4,5]) => [3,5,7,9]
 
-function matrixAddition ([[1,2,3,4], [2,4,6,8]]), ([[1,2,3,4], [2,4,6,8]])    
+function matrixAddition ([[1,2,3,4], [2,4,6,8]], [[1,2,3,4], [2,4,6,8]])    
                           => [[2,4,6,8], [4,8,12,16]]
 
 Hint:
