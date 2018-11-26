@@ -1,8 +1,29 @@
 /*
 Strongly recommend to attempt this in pairs or groups.
 
-Using const problem write a method which will get from point A to point F
-in the shortest possible route. 
+Consider the graph stored as 'problem'. Write a method (and helper
+methods) that will show the distance and shortest path between
+two nodes in the graph.
+
+If there is no path, the distance returned should be Infinity, 
+and the path should be an empty array.
+
+If the start and end node are the same, the distance should be 0 and
+the path should only contain the start/end node. 
+
+Dijkstra’s algorithm:
+Note the initial cost to get to all nodes from the start node as
+Infinity, except for the start node itself, for which the cost is 0.
+
+In each round:
+A. Pick the unvisited node with the smallest current cost noted
+B. From that node, update the cost to every child node of that node, 
+   indicating the parent node for the cost.
+C. Mark that node as done
+
+You are done when all nodes have been visited. The cost is the
+final one noted on the finish node, and the path can be taken
+from the parents recorded.
 
 Test your solution: mocha 15_dijkstra_algorithm.js
 
